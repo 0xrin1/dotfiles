@@ -14,6 +14,14 @@
           "pwd": "allow",
           "cd": "allow",
           "rg *": "allow",
+          "git diff": "allow",
+          "git diff *": "allow",
+          "git status": "allow",
+          "git status *": "allow",
+          "git show": "allow",
+          "git show *": "allow",
+          "git ls-files": "allow",
+          "git ls-files *": "allow",
           "read": "allow"
         }
       }
@@ -28,6 +36,42 @@
       "models": {
         "GPT-5": {
           "name": "GPT-5 CHKN Custom",
+          "options": {
+            "reasoningEffort": "high",
+            "textVerbosity": "low",
+            "reasoningSummary": "auto",
+            "include": []
+          }
+        },
+        "x-ai/grok-4-fast:free": {
+          "name": "CHKN Grok 4 Fast",
+          "options": {
+            "reasoningEffort": "high",
+            "textVerbosity": "low",
+            "reasoningSummary": "auto",
+            "include": []
+          }
+        },
+        "gpt-5-codex": {
+          "name": "GPT-5-Codex CHKN Custom",
+          "options": {
+            "reasoningEffort": "high",
+            "textVerbosity": "low",
+            "reasoningSummary": "auto",
+            "include": []
+          }
+        },
+        "z-ai/glm-4.6": {
+          "name": "CHKN GLM 4.6",
+          "options": {
+            "reasoningEffort": "high",
+            "textVerbosity": "low",
+            "reasoningSummary": "auto",
+            "include": []
+          }
+        },
+        "anthropic/claude-sonnet-4.5": {
+          "name": "Claude Sonnet 4.5 CHKN",
           "options": {
             "reasoningEffort": "high",
             "textVerbosity": "low",
